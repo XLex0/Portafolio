@@ -55,14 +55,16 @@ De 11/2021 - Actualidad
 
 ## CURSOS Y CERTIFICACIONES
 
-##### Google Business Intelligence - Google
-
+### Google Business Intelligence - Google
 Octubre 2025
 
-##### Endpoint Security - Cisco
+### Endpoint Security - Cisco
 
 Mayo 2025
 
-##### Networking Decives And Initial Configuratoin - Cisco
+### Networking Decives And Initial Configuratoin - Cisco
 
 Marzo 2025
+
+## CONTACTO 
+[LinkedIn](https://www.linkedin.com/in/alexander-motoche-208510327/)

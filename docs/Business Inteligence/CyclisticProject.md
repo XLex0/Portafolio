@@ -1,6 +1,12 @@
 # Cyclistic Project
->Proyecto Realizado por:
-Alexander Motoche
+
+Proyecto realizado por: <b>Alexander Motoche</b>
+
+<p>
+  <img src="https://img.shields.io/badge/Tableau-0055A4?style=for-the-badge&logo=tableau&logoColor=white"/>
+  <img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/BigQuery-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white"/>
+</p>
 
 #### Requisitos de los Stakeholders
 
@@ -78,7 +84,7 @@ WHERE
 La imagen a continuación muestra los resultados de la consulta.  Además, la salida de la consulta fue guardada para su posterior análisis.
 
 <div style="text-align: center;">
-  <img src="/images/ConsultaBI.jpeg" width="500" />
+  <img src="../../images/ConsultaBI.jpeg" width="500" />
 </div>
 
 
@@ -88,13 +94,13 @@ A continuación, se incluyen dos visualizaciones relacionadas con el análisis d
 
 Análisis de Viajes Totales y Número de Viajes por Zona:
 <div style="text-align: center;">
-  <img src="/images/MapC.png" width="500" />
+  <img src="../../images//MapC.png" width="500" />
 </div>
 
 
 Mapa del Tiempo de Viaje por Temporada de Verano y Tiempo de Viaje Normal:
 <div style="text-align: center;">
-  <img src="/images/MapaNY.png" width="500" />
+  <img src="../../images//MapaNY.png" width="500" />
 </div>
 
 
