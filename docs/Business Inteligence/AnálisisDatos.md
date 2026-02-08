@@ -1,6 +1,7 @@
 # Análisis de datos de estudiantes foráneos
 
-Repositorio del proyecto: https://github.com/XLex0/AnalisisDatosEstudiantesForaneos-BI
+**Repositorio del proyecto:**  
+[Ver el proyecto completo en GitHub](https://github.com/XLex0/AnalisisDatosEstudiantesForaneos-BI)
 
 <p >
   <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"/>
@@ -171,3 +172,9 @@ Gráfico tipo dona que muestra la distribución porcentual de los gastos por cat
 Gráfico de barras por período académico que permite analizar el balance neto promedio a lo largo del tiempo.
 
 Tabla dinámica interactiva que presenta indicadores como número de becas por provincia, funcionando como complemento tabular para el análisis.
+
+
+
+
+
+[Ver el proyecto completo en GitHub](https://github.com/XLex0/AnalisisDatosEstudiantesForaneos-BI)
