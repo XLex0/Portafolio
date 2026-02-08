@@ -1,8 +1,6 @@
 site_name: Mi Portafolio
 theme:
   name: material
-  logo: images/maletin.png
-  favicon: images/maletin.png
   language: es
   footer: false
 
