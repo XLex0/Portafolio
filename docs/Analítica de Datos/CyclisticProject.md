@@ -8,6 +8,10 @@ Proyecto realizado por: <b>Alexander Motoche</b>
   <img src="https://img.shields.io/badge/BigQuery-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white"/>
 </p>
 
+## Colaboradores
+
+* **Alexander Motoche:** Desarrollo e implementación de ciclo de vida de Business Intelligence (BI). Implementador de la arquitectura técnica del proyecto y documentación
+
 #### Requisitos de los Stakeholders
 
 Este documento presenta los requisitos de un proyecto de Business Intelligence para Cyclistic, centrado en las peticiones de los Stakeholders

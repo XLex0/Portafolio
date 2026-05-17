@@ -12,6 +12,15 @@
   <img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
 </p>
 
+## Colaboradores
+
+* **Alexander Motoche:** Diseño, desarrollo e implementación de todo el ciclo de vida de Business Intelligence (BI). Responsable absoluto de la arquitectura técnica del proyecto:
+    * **Ingeniería de Datos:** Desarrollo de scripts en Python (Jupyter Notebooks) para la generación de datos sintéticos complejos, simulando entornos reales con ruido y problemas de calidad de datos.
+    * **Pipeline ETL:** Construcción del proceso completo de extracción, transformación, limpieza y unificación de fuentes heterogéneas (MySQL, PostgreSQL, CSV y Excel) en una tabla maestra unificada.
+    * **Modelado e Infraestructura OLAP:** Configuración del entorno en ClickHouse, diseño de la arquitectura bajo un modelo en estrella y segmentación en datamarts especializados (Bienestar, Economía y Gastos).
+    * **Optimización de Consultas:** Implementación de vistas agregadas en ClickHouse para automatizar el cálculo de métricas de rendimiento y variables socioeconómicas.
+    * **Visualización y Analítica de Negocio:** Diseño técnico y maquetación de los dashboards interactivos en Power BI (Dashboard de Bienestar y Dashboard de Economía) enfocados en el análisis territorial, socioeconómico y académico para la toma de decisiones.
+
 ### Objetivo
 
 Optimizar el apoyo académico y financiero para los estudiantes foráneos, proporcionando a los responsables de la toma de decisiones información clave sobre su bienestar y situación económica.

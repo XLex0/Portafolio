@@ -1,10 +1,5 @@
 # PetGo Web
 
-Proyecto realizado por:  
-<b>Jefferson Chileno</b>  
-<b>Pablo Maldonado</b>  
-<b>Emilio Quinga</b>  
-<b>Alexander Motoche</b> <sub><i>(Líder proyecto)</i></sub>
 
 <p>
   <img src="https://img.shields.io/badge/Azure%20DevOps-0078D7?style=for-the-badge&logo=azuredevops&logoColor=white"/>
@@ -16,6 +11,14 @@ Proyecto realizado por:
   <img src="https://img.shields.io/badge/Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white"/>
   <img src="https://img.shields.io/badge/Amazon%20S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white"/>
 </p>
+
+## Colaboradores
+
+Proyecto realizado por:  
+<b>Jefferson Chileno</b>  
+<b>Pablo Maldonado</b>  
+<b>Emilio Quinga</b>  
+<b>Alexander Motoche</b> <sub><i>(Líder proyecto)</i></sub>
 
 
 ### Descripción:
