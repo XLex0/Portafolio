@@ -15,7 +15,7 @@
         <link rel="next" href="../Hands%20Recognition/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../images/logo.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
     
     
@@ -25,6 +25,9 @@
     
     
       <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -53,7 +56,12 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="cyan">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -80,8 +88,7 @@
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
     <a href="../.." title="Mi Portafolio" class="md-header__button md-logo" aria-label="Mi Portafolio" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../images/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -105,8 +112,8 @@
       </div>
     </div>
     
+      
     
-      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -178,8 +185,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Mi Portafolio" class="md-nav__button md-logo" aria-label="Mi Portafolio" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../images/logo.png" alt="logo">
 
     </a>
     Mi Portafolio
@@ -779,7 +785,7 @@
 <hr />
 <h2 id="estructura-del-repositorio">Estructura del Repositorio</h2>
 <p>El proyecto mantiene una distribución modular para facilitar el mantenimiento y escalabilidad de nuevas microfuncionalidades:</p>
-<pre><code class="language-text">📂 ADA-Automated-Digital-Assistant
+<div class="highlight"><pre><span></span><code>📂 ADA-Automated-Digital-Assistant
  ┣ 📂 env                     # Entorno virtual local
  ┣ 📂 src                     # Código fuente de la aplicación
  ┃ ┣ 📂 instruction           # Scripts que contienen la lógica interna de cada acción
@@ -800,55 +806,55 @@
  ┣ 📜 load.py                 # Cargador inicial del entorno
  ┣ 📜 params.json             # Parámetros del sistema
  ┗ 📜 .gitignore
-</code></pre>
+</code></pre></div>
 <hr />
 <h2 id="configuracion-de-comandos-instructionsjson">Configuración de Comandos (<code>instructions.json</code>)</h2>
 <p>El comportamiento del asistente se parametriza modificando el archivo estructurado. Puedes vincular cualquier ejecutable o acceso directo (<code>.lnk</code>) de Windows siguiendo el siguiente patrón de diseño del diccionario maestro:</p>
-<pre><code class="language-json">{
-    &quot;poder&quot;: {
-        &quot;abrir&quot;: {
-            &quot;word&quot;: [&quot;Abriendo Word&quot;, &quot;\&quot;C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Word.lnk\&quot;&quot;],
-            &quot;brave&quot;: [&quot;Abriendo Brave&quot;, &quot;\&quot;C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Brave.lnk\&quot;&quot;],
-            &quot;base&quot;: &quot;from src.instruction.abrir import openF; openF(&quot;,
-            &quot;error&quot;: &quot;Error encontrado en comando abrir&quot;
-        },
-        &quot;ingresar&quot;: {
-            &quot;youtube&quot;: {
-                &quot;buscar&quot;: [&quot;buscando en Youtube&quot;, &quot;\&quot;https://www.youtube.com/results?search_query=\&quot;,0&quot;],
-                &quot;default&quot;: [&quot;ingresando a Youtube&quot;, &quot;\&quot;https://www.youtube.com/online\&quot;,1&quot;],
-                &quot;error&quot;: &quot;Error encontrado en comando ingresar, youtube&quot;
-            },
-            &quot;base&quot;: &quot;from src.instruction.ingresar import select; select(&quot;,
-            &quot;error&quot;: &quot;Error encontrado en comando ingresar&quot;
-        }
-    }
-}
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;poder&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;abrir&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;word&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Abriendo Word&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;\&quot;C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Word.lnk\&quot;&quot;</span><span class="p">],</span>
+<span class="w">            </span><span class="nt">&quot;brave&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Abriendo Brave&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;\&quot;C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Brave.lnk\&quot;&quot;</span><span class="p">],</span>
+<span class="w">            </span><span class="nt">&quot;base&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;from src.instruction.abrir import openF; openF(&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;error&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Error encontrado en comando abrir&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="nt">&quot;ingresar&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;youtube&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;buscar&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;buscando en Youtube&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;\&quot;https://www.youtube.com/results?search_query=\&quot;,0&quot;</span><span class="p">],</span>
+<span class="w">                </span><span class="nt">&quot;default&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;ingresando a Youtube&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;\&quot;https://www.youtube.com/online\&quot;,1&quot;</span><span class="p">],</span>
+<span class="w">                </span><span class="nt">&quot;error&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Error encontrado en comando ingresar, youtube&quot;</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;base&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;from src.instruction.ingresar import select; select(&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;error&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Error encontrado en comando ingresar&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 <hr />
 <h2 id="instalacion-y-requisitos">Instalación y Requisitos</h2>
 <h3 id="prerrequisitos-del-sistema">Prerrequisitos del Sistema</h3>
 <p>Para el correcto procesamiento y guardado de formatos de audio, el sistema requiere disponer del binario de <strong>FFmpeg</strong> configurado en las variables de entorno de Windows. Puedes instalarlo rápidamente mediante Chocolatey:</p>
-<pre><code class="language-bash">choco install ffmpeg
-</code></pre>
+<div class="highlight"><pre><span></span><code>choco<span class="w"> </span>install<span class="w"> </span>ffmpeg
+</code></pre></div>
 <h3 id="clonar-e-instalar-dependencias">Clonar e Instalar Dependencias</h3>
 <ol>
 <li>Clona el repositorio oficial:
-   <code>bash
-   git clone https://github.com/XLex0/ADA-Automated-Digital-Assistant-.git
-   cd ADA-Automated-Digital-Assistant</code></li>
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/XLex0/ADA-Automated-Digital-Assistant-.git
+<span class="nb">cd</span><span class="w"> </span>ADA-Automated-Digital-Assistant
+</code></pre></div></li>
 <li>Instala los paquetes de Python requeridos:
-   <code>bash
-   pip install -r requirements.txt</code></li>
+   <div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</code></pre></div></li>
 <li>Descarga el modelo en español para procesamiento de texto con spaCy:
-   <code>bash
-   python -m spacy download es_core_news_sm</code></li>
+   <div class="highlight"><pre><span></span><code>python<span class="w"> </span>-m<span class="w"> </span>spacy<span class="w"> </span>download<span class="w"> </span>es_core_news_sm
+</code></pre></div></li>
 </ol>
 <hr />
 <h2 id="instrucciones-de-uso">Instrucciones de Uso</h2>
 <ol>
 <li>Ejecuta el archivo principal o de pruebas para inicializar los modelos residentes en memoria:
-   <code>bash
-   python test.py</code></li>
+   <div class="highlight"><pre><span></span><code>python<span class="w"> </span>test.py
+</code></pre></div></li>
 <li>Mantén presionada la <strong>barra espaciadora (<code>space</code>)</strong> en tu teclado para hablar.</li>
 <li>Di tu comando usando la frase inicializada de activación para maximizar la efectividad del lematizador de spaCy. El sistema buscará la palabra de activación de la familia de <strong>"puedes"</strong>:<blockquote>
 <p>🎙️ <em>“Hola, ¿cómo estás? </em><em>¿Puedes</em><em> abrir excel?”</em> &gt; 🎙️ <em>“Ada, </em><em>puedes</em><em> buscar guitarras en youtube”</em></p>

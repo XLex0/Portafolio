@@ -13,6 +13,7 @@ theme:
     accent: cyan           # Color de los links, botones e indicadores al pasar el mouse
 
 extra:
+  generator: false
   social:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/alexander-motoche-208510327/
