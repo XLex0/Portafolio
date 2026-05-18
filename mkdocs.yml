@@ -3,6 +3,14 @@ theme:
   name: material
   language: es
   footer: false
+  # ---- SECCIÓN PARA CAMBIAR EL LOGO ----
+  logo: images/logo.png   # Ruta al nuevo icono
+  favicon: images/logo.png # Usar el mismo para el icono de la pestaña
+  # ---- CONFIGURACIÓN DEL MODO OSCURO ----
+  palette:
+    scheme: slate          # Cambia el fondo a modo oscuro (slate)
+    primary: teal          # Color de la barra de navegación superior (teal)
+    accent: cyan           # Color de los links, botones e indicadores al pasar el mouse
 
 extra:
   social:
@@ -11,3 +19,13 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/XLex0
   copyright: "© 2025 Mi Portafolio | Desarrollado por Alexander Motoche"
+
+# ---- ESTA ES LA SECCIÓN QUE DEBES AÑADIR ----
+markdown_extensions:
+  - admonition       # Activa las cajas informativas (!!! info)
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true  # Activa las pestañas interactivas (===)
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg # Activa los iconos nativos (:briefcase:)
