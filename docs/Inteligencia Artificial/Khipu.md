@@ -10,7 +10,8 @@
 </p>
 
 ---
-> **Propiedad Intelectual:** Al ser un desarrollo propio con potencial de comercialización, el repositorio principal es privado. Se comparten únicamente evidencias del funcionamiento, diseño de interfaz y arquitectura del software.
+> **Propiedad Intelectual:** 
+Al ser un desarrollo propio con potencial de comercialización, el repositorio principal es privado. Se comparten únicamente evidencias del funcionamiento, diseño de interfaz y arquitectura del software.
 ---
 
 ### Rol en el Proyecto
@@ -45,7 +46,7 @@ El sistema se construyó bajo un diseño modular y desacoplado, garantizando que
   * **Analítica & Reporte** 
 
 <div style="text-align: center;">
-  <img src="../../images/Khipu2.png" width="500" alt="Interfaz de Khipu Bot en Telegram" />
+  <img src="../../images/khipu2.png" width="500" alt="Interfaz de Khipu Bot en Telegram" />
 </div>
 
 ---
